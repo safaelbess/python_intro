@@ -95,7 +95,7 @@ print('maxvalue is ',maxvalue)
 print(max(list1))
 print(min(list1))
 
-print(list1.pop()) #remve the last value in the list
+print(list1.pop()) #remove the last value in the list
 print(list1)
 print(list1.pop(2), list1)
 #print(list1.remove(1)) 
@@ -106,3 +106,5 @@ list1.sort()
 print(list1)
 list1.sort(reverse=True)
 print(list1)
+
+list2=[1,2,3,'5','6',9]

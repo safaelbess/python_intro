@@ -52,7 +52,7 @@
 # # # # def magicTrick(names):
 # # # #      for i in (names):
 # # # #          print(i +' that was a great trick!')
-# # # #          print('i cant wait to see you next trick'+ i +'.\n')
+# # # #          print(i+' cant wait to see you next trick'+ i +'.\n')
 # # # # magicTrick(names)       
 # # # names = ['Alice ', 'David', 'Caroline']
 # # # counter = 0
@@ -111,26 +111,51 @@
 
 
 
-sum1=0.00
+# sum1=0.00
 
 
 
-list1=[1,2,3,'9','8',3.7,4.5,'r',8,9]
-for i in list1:
-  try:
-   sum1 = sum1 + float(i)
+# list1=[1,2,3,'9','8',3.7,4.5,'r',8,9]
+# for i in list1:
+#   try:
+#    sum1 = sum1 + float(i)
        
-   list1[list1.index(i)]=float(i)
-  except ValueError:
-   print('not a number')
-   list1.remove(i)
+#    list1[list1.index(i)]=float(i)
+#   except ValueError:
+#    print('not a number')
+#    list1.remove(i)
     
-print (sum1)
+# print (sum1)
 #print sum1    
 #print (list1.avg())
 # print(list1.sum())
 # print(list1.max())
 # print(list1.min())
 
+student={'name':'','age':'','job':'','country':'','parent':{'father':'','mother':'',},'skills':[]}
+# for i in student:
+#   student[i]= input('enter the '+ i +'i')
+#   print(student)
 
+for i in student:
+  if type(student[i])==int:
+  
+        student[i] = int(input('enter the ' + i +':'))
+  
+  
+  
+    
+  elif type(student[i])==list:
+    times= int(input('how many skills do you want'))
+    for j in range (times): 
+     student[i].append(input('enter the  '+ i +':'))  
+    
+  elif type(student[i])==dict:
+    student[i]['father']=input('enter the father name:')
+    student[i]['mother']=input('enter the mother name;') 
+    
+  else:
+    student[i]=input('enter the' + i +':')
+print (student)      
+  
 
